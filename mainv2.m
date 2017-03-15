@@ -13,7 +13,7 @@ close all
 %%choose model
 model=@quadraticModel;
 %%load full data and normnalization
-dataNumber=2;
+dataNumber=1;
 flag_normal=1;
 normalRange=[-1 1];
 rawdata=xlsread('1and2.xlsx',dataNumber);
@@ -135,7 +135,7 @@ label=zlabel('ACS');
 colormap(jet(100))
 % caxis
 % caxis([100,275])
-% view(90,90)
+view(0,90)
 %%%%%%%%%%%%%%%%%optimal%%%%%%%%%%%%%%%%%%%%%
 hold on 
 drug1=min(input_normal);
